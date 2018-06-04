@@ -12,6 +12,9 @@
 		9175AC0520C5ABE2001986AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9175AC0320C5ABE2001986AE /* Main.storyboard */; };
 		9175AC0720C5ABE4001986AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9175AC0620C5ABE4001986AE /* Assets.xcassets */; };
 		9175AC0A20C5ABE4001986AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9175AC0820C5ABE4001986AE /* LaunchScreen.storyboard */; };
+		9175AC1220C5AD54001986AE /* FuudelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175AC1120C5AD54001986AE /* FuudelModel.swift */; };
+		9175AC1420C5AD62001986AE /* FuudelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9175AC1320C5AD61001986AE /* FuudelTableViewCell.xib */; };
+		9175AC1620C5ADD6001986AE /* FuudelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175AC1520C5ADD6001986AE /* FuudelTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9175AC0620C5ABE4001986AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9175AC0920C5ABE4001986AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9175AC0B20C5ABE4001986AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9175AC1120C5AD54001986AE /* FuudelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuudelModel.swift; sourceTree = "<group>"; };
+		9175AC1320C5AD61001986AE /* FuudelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FuudelTableViewCell.xib; sourceTree = "<group>"; };
+		9175AC1520C5ADD6001986AE /* FuudelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuudelTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,48 @@
 			isa = PBXGroup;
 			children = (
 				9175ABFF20C5ABE2001986AE /* AppDelegate.swift */,
-				9175AC0120C5ABE2001986AE /* ViewController.swift */,
+				9175AC1A20C5ADFE001986AE /* Controller */,
+				9175AC1920C5ADF5001986AE /* View */,
+				9175AC1820C5ADEB001986AE /* Model */,
+				9175AC1720C5ADE0001986AE /* Xib */,
 				9175AC0320C5ABE2001986AE /* Main.storyboard */,
 				9175AC0620C5ABE4001986AE /* Assets.xcassets */,
 				9175AC0820C5ABE4001986AE /* LaunchScreen.storyboard */,
 				9175AC0B20C5ABE4001986AE /* Info.plist */,
 			);
 			path = Fuudel;
+			sourceTree = "<group>";
+		};
+		9175AC1720C5ADE0001986AE /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				9175AC1320C5AD61001986AE /* FuudelTableViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		9175AC1820C5ADEB001986AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9175AC1120C5AD54001986AE /* FuudelModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9175AC1920C5ADF5001986AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9175AC1520C5ADD6001986AE /* FuudelTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9175AC1A20C5ADFE001986AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9175AC0120C5ABE2001986AE /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9175AC1420C5AD62001986AE /* FuudelTableViewCell.xib in Resources */,
 				9175AC0A20C5ABE4001986AE /* LaunchScreen.storyboard in Resources */,
 				9175AC0720C5ABE4001986AE /* Assets.xcassets in Resources */,
 				9175AC0520C5ABE2001986AE /* Main.storyboard in Resources */,
@@ -135,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9175AC1620C5ADD6001986AE /* FuudelTableViewCell.swift in Sources */,
 				9175AC0220C5ABE2001986AE /* ViewController.swift in Sources */,
 				9175AC0020C5ABE2001986AE /* AppDelegate.swift in Sources */,
+				9175AC1220C5AD54001986AE /* FuudelModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
