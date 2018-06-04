@@ -103,7 +103,7 @@ class ViewController: UIViewController {
     
     
 }
-extension ViewController:UITableViewDataSource,UITableViewDelegate,FuudelTableViewCellDelegate{
+extension ViewController:UITableViewDataSource,UITableViewDelegate,FuudelTableViewCellDelegate,CreateItemControllerDelegate{
     
     // .....Pragma mark - UITableViewDataSource & UITableViewDelegate implementation starts.....
 
@@ -143,10 +143,10 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate,FuudelTableVi
     
     func fuudelTableViewCellDidTapCreate(_ sender: FuudelTableViewCell) {
         
-//        if let createItemController = self.storyboard?.instantiateViewController(withIdentifier: "createitem") as? CreteItemController{
-//            createItemController.createItemDelegate = self
-//            self.navigationController?.pushViewController(createItemController, animated: true)
-//        }
+        if let createItemController = self.storyboard?.instantiateViewController(withIdentifier: "createitem") as? CreteItemController{
+            createItemController.createItemDelegate = self
+            self.navigationController?.pushViewController(createItemController, animated: true)
+        }
         
     }
     

@@ -15,6 +15,8 @@
 		9175AC1220C5AD54001986AE /* FuudelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175AC1120C5AD54001986AE /* FuudelModel.swift */; };
 		9175AC1420C5AD62001986AE /* FuudelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9175AC1320C5AD61001986AE /* FuudelTableViewCell.xib */; };
 		9175AC1620C5ADD6001986AE /* FuudelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175AC1520C5ADD6001986AE /* FuudelTableViewCell.swift */; };
+		9175AC1E20C5B14A001986AE /* AUIAutoGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9175AC1D20C5B14A001986AE /* AUIAutoGrowingTextView.m */; };
+		9175AC2120C5B1B6001986AE /* CreteItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175AC2020C5B1B5001986AE /* CreteItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		9175AC1120C5AD54001986AE /* FuudelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuudelModel.swift; sourceTree = "<group>"; };
 		9175AC1320C5AD61001986AE /* FuudelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FuudelTableViewCell.xib; sourceTree = "<group>"; };
 		9175AC1520C5ADD6001986AE /* FuudelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuudelTableViewCell.swift; sourceTree = "<group>"; };
+		9175AC1C20C5B14A001986AE /* AUIAutoGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIAutoGrowingTextView.h; sourceTree = "<group>"; };
+		9175AC1D20C5B14A001986AE /* AUIAutoGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIAutoGrowingTextView.m; sourceTree = "<group>"; };
+		9175AC1F20C5B157001986AE /* Fuudel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fuudel-Bridging-Header.h"; sourceTree = "<group>"; };
+		9175AC2020C5B1B5001986AE /* CreteItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreteItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 		9175ABF320C5ABE2001986AE = {
 			isa = PBXGroup;
 			children = (
+				9175AC1F20C5B157001986AE /* Fuudel-Bridging-Header.h */,
 				9175ABFE20C5ABE2001986AE /* Fuudel */,
 				9175ABFD20C5ABE2001986AE /* Products */,
 			);
@@ -92,6 +99,7 @@
 		9175AC1920C5ADF5001986AE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9175AC1B20C5B14A001986AE /* AutoGrowingTextView */,
 				9175AC1520C5ADD6001986AE /* FuudelTableViewCell.swift */,
 			);
 			path = View;
@@ -101,8 +109,18 @@
 			isa = PBXGroup;
 			children = (
 				9175AC0120C5ABE2001986AE /* ViewController.swift */,
+				9175AC2020C5B1B5001986AE /* CreteItemController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9175AC1B20C5B14A001986AE /* AutoGrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				9175AC1C20C5B14A001986AE /* AUIAutoGrowingTextView.h */,
+				9175AC1D20C5B14A001986AE /* AUIAutoGrowingTextView.m */,
+			);
+			path = AutoGrowingTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9175AC2120C5B1B6001986AE /* CreteItemController.swift in Sources */,
 				9175AC1620C5ADD6001986AE /* FuudelTableViewCell.swift in Sources */,
+				9175AC1E20C5B14A001986AE /* AUIAutoGrowingTextView.m in Sources */,
 				9175AC0220C5ABE2001986AE /* ViewController.swift in Sources */,
 				9175AC0020C5ABE2001986AE /* AppDelegate.swift in Sources */,
 				9175AC1220C5AD54001986AE /* FuudelModel.swift in Sources */,
@@ -332,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.digitech-labs.Fuudel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fuudel-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -349,6 +370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.digitech-labs.Fuudel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fuudel-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

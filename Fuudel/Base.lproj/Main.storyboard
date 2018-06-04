@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,6 +59,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4o-Hv-0eD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="692.20389805097454"/>
+        </scene>
+        <!--Create Item-->
+        <scene sceneID="8HU-Ii-riS">
+            <objects>
+                <viewController storyboardIdentifier="createitem" title="Create Item" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0aH-7R-swV" customClass="CreteItemController" customModule="Fuudel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vea-4m-nXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product Name" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-D1-fdy" customClass="AUIAutoGrowingTextView">
+                                <rect key="frame" x="37.5" y="112.5" width="300" height="43"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="43" id="2lI-vm-Dww"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I5c-Ki-1eO" customClass="AUIAutoGrowingTextView">
+                                <rect key="frame" x="37" y="204" width="300" height="43"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="43" id="pyr-y0-STV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMS-ca-e4E">
+                                <rect key="frame" x="37.5" y="80" width="112.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf8-Q1-mqZ">
+                                <rect key="frame" x="37" y="171.5" width="90.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eP-UN-0aQ">
+                                <rect key="frame" x="67" y="371.5" width="240" height="44"/>
+                                <color key="backgroundColor" red="0.89888733629999995" green="0.49347245690000002" blue="0.22692838309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XxF-EQ-JuE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitToCreate:" destination="0aH-7R-swV" eventType="touchUpInside" id="hPi-yk-gvd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yx-0s-Odl">
+                                <rect key="frame" x="37" y="263" width="40" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-6t-lg5">
+                                <rect key="frame" x="37" y="295.5" width="150" height="32"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ecg-de-x18"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Nr-D1-fdy" firstAttribute="centerX" secondItem="Vea-4m-nXc" secondAttribute="centerX" id="36C-oR-Bkw"/>
+                            <constraint firstItem="yf8-Q1-mqZ" firstAttribute="top" secondItem="3Nr-D1-fdy" secondAttribute="bottom" constant="16" id="5cY-I7-6wH"/>
+                            <constraint firstItem="3yx-0s-Odl" firstAttribute="top" secondItem="I5c-Ki-1eO" secondAttribute="bottom" constant="16" id="6uV-CN-QkY"/>
+                            <constraint firstItem="0eP-UN-0aQ" firstAttribute="width" secondItem="I5c-Ki-1eO" secondAttribute="width" multiplier="0.8" id="Ck0-gT-Olz"/>
+                            <constraint firstItem="0eP-UN-0aQ" firstAttribute="centerX" secondItem="I5c-Ki-1eO" secondAttribute="centerX" id="DZW-UG-pSY"/>
+                            <constraint firstItem="eEI-6t-lg5" firstAttribute="width" secondItem="I5c-Ki-1eO" secondAttribute="width" multiplier="0.5" id="QNF-xw-VkW"/>
+                            <constraint firstItem="3Nr-D1-fdy" firstAttribute="top" secondItem="HMS-ca-e4E" secondAttribute="bottom" constant="12" id="TOL-Sa-K7D"/>
+                            <constraint firstItem="3yx-0s-Odl" firstAttribute="leading" secondItem="HMS-ca-e4E" secondAttribute="leading" id="X5m-TG-8a2"/>
+                            <constraint firstItem="eEI-6t-lg5" firstAttribute="leading" secondItem="3yx-0s-Odl" secondAttribute="leading" id="Y9f-qn-B6l"/>
+                            <constraint firstItem="HMS-ca-e4E" firstAttribute="top" secondItem="UkN-XT-fVI" secondAttribute="top" constant="60" id="ZXZ-Uk-ANe"/>
+                            <constraint firstItem="3Nr-D1-fdy" firstAttribute="width" secondItem="Vea-4m-nXc" secondAttribute="width" multiplier="0.8" id="dqa-nl-NOl"/>
+                            <constraint firstItem="I5c-Ki-1eO" firstAttribute="width" secondItem="3Nr-D1-fdy" secondAttribute="width" id="f57-qE-6No"/>
+                            <constraint firstItem="eEI-6t-lg5" firstAttribute="top" secondItem="3yx-0s-Odl" secondAttribute="bottom" constant="12" id="fIs-Mt-Lcd"/>
+                            <constraint firstItem="I5c-Ki-1eO" firstAttribute="top" secondItem="yf8-Q1-mqZ" secondAttribute="bottom" constant="12" id="jka-ve-by7"/>
+                            <constraint firstItem="I5c-Ki-1eO" firstAttribute="centerX" secondItem="3Nr-D1-fdy" secondAttribute="centerX" id="oOP-A7-1FD"/>
+                            <constraint firstItem="yf8-Q1-mqZ" firstAttribute="leading" secondItem="HMS-ca-e4E" secondAttribute="leading" id="r1Z-Hs-Jlv"/>
+                            <constraint firstItem="0eP-UN-0aQ" firstAttribute="top" secondItem="eEI-6t-lg5" secondAttribute="bottom" constant="44" id="rr7-rC-p2P"/>
+                            <constraint firstItem="HMS-ca-e4E" firstAttribute="leading" secondItem="3Nr-D1-fdy" secondAttribute="leading" id="ruD-y5-M0N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UkN-XT-fVI"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceTextField" destination="eEI-6t-lg5" id="uLD-Pg-iZW"/>
+                        <outlet property="productDescriptionTextView" destination="I5c-Ki-1eO" id="VOJ-6L-8Kd"/>
+                        <outlet property="productName" destination="3Nr-D1-fdy" id="dN1-96-Pym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3V-er-IeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="692"/>
         </scene>
     </scenes>
 </document>
